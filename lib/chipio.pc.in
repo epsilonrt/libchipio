@@ -6,8 +6,8 @@ includedir=@INSTALL_INCLUDE_DIR@
 ldflags_other=@CHIPIO_LDFLAGS_OTHER@
 cflags_other=@CHIPIO_CPPFLAGS_OTHER@
 
-Name: @PROJECT_NAME@pp
-Description: @PROJECT_DESCRIPTION@
+Name: chipio
+Description: Universal Input/Output Circuit library
 URL: http://www.epsilonrt.fr/sysio
 Version: @SYSIO_VERSION@
 Requires: sysio

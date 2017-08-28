@@ -119,11 +119,11 @@
       </Completion>
     </Configuration>
   </Settings>
-  <Dependencies Name="Debug"/>
-  <Dependencies Name="Release"/>
   <VirtualDirectory Name="demo">
     <File Name="CMakeLists.txt"/>
     <File Name="chipio_demo_serial.c"/>
     <File Name="chipio_demo_adc.c"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

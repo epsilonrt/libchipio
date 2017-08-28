@@ -1,3 +1,9 @@
+###############################################################################
+# Copyright © 2017 epsilonRT, All rights reserved.                            #
+# This software is governed by the CeCILL license <http://www.cecill.info>    #
+###############################################################################
+# chipio demo CMakeLists.txt
+
 cmake_minimum_required(VERSION 3.5)
 
 project (chipio_demo)
@@ -22,6 +28,7 @@ foreach(f ${demo_list})
     message (STATUS "Add ${demo_name} executable...")
     add_executable (${demo_name} ${f}) 
     
+    set_property(TARGET ${demo_name} PROPERTY C_STANDARD 99)
     target_link_libraries(${demo_name} ${CHIPIO_LIBRARIES})
     target_include_directories(${demo_name} PUBLIC ${demo_dir} ${CHIPIO_INCLUDE_DIRS})
     target_compile_options(${demo_name} PUBLIC ${CHIPIO_CFLAGS})
